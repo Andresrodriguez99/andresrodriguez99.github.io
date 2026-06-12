@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Morena Spa | Belleza, Bienestar y Elegancia</title>
+
+    <meta name="description"
+        content="Morena Spa - Servicios profesionales de uñas, pestañas, peluquería y masajes relajantes en un ambiente elegante y moderno.">
+
+    <meta name="keywords"
+        content="spa, uñas, pestañas, peluquería, manicure, pedicure, masajes">
+
+    <meta name="author" content="Morena Spa">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- LOADER -->
+
+    <div class="loader">
+
+        <div class="spinner"></div>
+
+    </div>
+
+    <!-- OVERLAY CARRITO --> 
+     <div class="cart-overlay" id="cart-overlay">
+        
+     </div>
+
+    <!-- BOTON CARRITO -->
+
+<div class="cart-floating"
+    id="cart-floating">
+
+    <i class="fa-solid fa-bag-shopping"></i>
+
+    <span id="cart-count">0</span>
+
+</div>
+
+<!-- PANEL CARRITO -->
+
+<div class="cart-panel"
+    id="cart-panel">
+
+    <!-- HEADER -->
+
+    <div class="cart-header">
+
+        <h3>Tu Reserva</h3>
+
+        <i class="fa-solid fa-xmark"
+            id="close-cart"></i>
+
+    </div>
+
+    <!-- CLIENTE -->
+
+    <div class="cart-client">
+
+        <input
+            type="text"
+            id="client-name"
+            placeholder="Tu nombre">
+
+        <input
+            type="text"
+            id="client-phone"
+            placeholder="Tu teléfono">
+
+    </div>
+
+    <!-- ITEMS -->
+
+    <div class="cart-items"
+        id="cart-items">
+
+        <p class="empty-cart">
+            No has agregado servicios
+        </p>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="cart-footer">
+
+        <h4>
+            Total:
+            <span id="cart-total">
+                $0
+            </span>
+        </h4>
+
+        <div class="cart-buttons">
+
+            <button
+                id="clear-cart"
+                class="clear-cart">
+
+                Vaciar carrito
+
+            </button>
+
+            <button
+                id="send-whatsapp">
+
+                Reservar por WhatsApp
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+    <!-- HEADER -->
+
+    <header id="header">
+
+        <div class="logo">
+            MORENA <span>SPA</span>
+        </div>
+
+        <!-- MENU -->
+
+        <div class="menu-toggle" id="menu-toggle">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+
+        <nav id="nav">
+
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#galeria">Galería</a>
+            <a href="#contacto">Contacto</a>
+
+        </nav>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero" id="inicio">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content fade-up">
+
+            <span class="hero-subtitle">
+                Elegancia • Belleza • Bienestar
+            </span>
+
+            <h1>Morena Spa</h1>
+
+            <p>
+                Vive una experiencia única de relajación,
+                belleza y cuidado personal en un ambiente
+                moderno, elegante y acogedor.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="https://wa.me/573202114207"
+                    target="_blank"
+                    class="btn">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Reservar por WhatsApp
+
+                </a>
+
+                <a href="#servicios"
+                    class="btn-secondary">
+
+                    Ver Servicios
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- SCROLL -->
+
+        <div class="scroll-indicator">
+
+            <span></span>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+
+    <section class="about" id="nosotros">
+
+        <div class="section-title fade-up">
+
+            <span>NOSOTROS</span>
+
+            <h2>Tu espacio de belleza y relajación</h2>
+
+            <p>
+                Un lugar diseñado para consentirte y hacerte sentir increíble.
+            </p>
+
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-image fade-left">
+
+                <img src="img/Habitacion.jpg"
+                    alt="Morena Spa">
+
+            </div>
+
+            <div class="about-text fade-right">
+
+                <h3>Bienvenida a Morena Spa</h3>
+
+                <p>
+                    En Morena Spa nos especializamos en brindar experiencias
+                    de belleza, bienestar y relajación en un ambiente elegante,
+                    moderno y acogedor.
+                </p>
+
+                <p>
+                    Contamos con servicios profesionales de uñas,
+                    pestañas, peluquería y masajes relajantes.
+                </p>
+
+                <div class="schedule">
+
+                    <h4>Horarios</h4>
+
+                    <p>
+                        Lunes a Sábado:
+                        8:00 AM - 12:00 PM /
+                        2:00 PM - 7:00 PM
+                    </p>
+
+                    <p>
+                        Domingos:
+                        Atención con cita previa
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SERVICIOS -->
+
+<section class="services" id="servicios">
+
+    <div class="section-title fade-up">
+
+        <span>SERVICIOS</span>
+
+        <h2>Nuestros Servicios</h2>
+
+        <p>
+            Conoce todos nuestros servicios premium
+        </p>
+
+    </div>
+
+    <!-- UÑAS -->
+
+    <div class="category-title">
+
+        <h2>Uñas</h2>
+
+    </div>
+
+    <div class="services-container">
+
+        <!-- MANICURA -->
+
+        <div class="card fade-up">
+
+            <img src="img/Manicure.jpg"
+                alt="Manicure">
+
+            <div class="card-content">
+
+                <h3>Manicura Tradicional</h3>
+
+                <span>$24.000</span>
+
+                <p>
+                    Tradicional manos
+                </p>
+
+                <button class="add-cart"
+                    data-name="Manicura Tradicional"
+                    data-price="24000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- PEDICURA -->
+
+        <div class="card fade-up">
+
+            <img src="img/pedicure.jpg"
+                alt="Pedicure">
+
+            <div class="card-content">
+
+                <h3>Pedicura Tradicional</h3>
+
+                <span>$26.000</span>
+
+                <p>
+                    Tradicional pies
+                </p>
+
+                <button class="add-cart"
+                    data-name="Pedicura Tradicional"
+                    data-price="26000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- COMBO -->
+
+        <div class="card fade-up">
+
+            <img src="img/Manicure-pedicure.jpg"
+                alt="Combo">
+
+            <div class="card-content">
+
+                <h3>Combo</h3>
+
+                <span>$50.000</span>
+
+                <p>
+                    Manicura + Pedicura
+                </p>
+
+                <button class="add-cart"
+                    data-name="Combo Manicura + Pedicura"
+                    data-price="50000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- POLYGEL -->
+
+        <div class="card fade-up">
+
+            <img src="img/Polygel.jpg"
+                alt="Polygel">
+
+            <div class="card-content">
+
+                <h3>Polygel</h3>
+
+                <span>$125.000</span>
+
+                <p>
+                    Diseño profesional y elegante
+                </p>
+
+                <button class="add-cart"
+                    data-name="Polygel"
+                    data-price="125000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- PRESS ON -->
+
+        <div class="card fade-up">
+
+            <img src="img/Press-on.jpg"
+                alt="Press On">
+
+            <div class="card-content">
+
+                <h3>Press On</h3>
+
+                <span>$100.000</span>
+
+                <p>
+                    Uñas modernas y personalizadas
+                </p>
+
+                <button class="add-cart"
+                    data-name="Press On"
+                    data-price="100000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- SEMI -->
+
+        <div class="card fade-up">
+
+            <img src="img/semi.jpg"
+                alt="Semi Permanente">
+
+            <div class="card-content">
+
+                <h3>Manicura Semi Permanente</h3>
+
+                <span>$50.000</span>
+
+                <p>
+                    Duración y brillo prolongado
+                </p>
+
+                <button class="add-cart"
+                    data-name="Manicura Semi Permanente"
+                    data-price="50000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- PEDICURA SEMI -->
+
+        <div class="card fade-up">
+
+            <img src="img/Pedicure-semi.jpg"
+                alt="Pedicure Semi">
+
+            <div class="card-content">
+
+                <h3>Pedicura Semi Permanente</h3>
+
+                <span>$50.000</span>
+
+                <p>
+                    Duración y brillo prolongado
+                </p>
+
+                <button class="add-cart"
+                    data-name="Pedicura Semi Permanente"
+                    data-price="50000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- ACRILICAS -->
+
+        <div class="card fade-up">
+
+            <img src="img/acrilicas.jpg"
+                alt="Acrilico">
+
+            <div class="card-content">
+
+                <h3>Manicura Acrílico</h3>
+
+                <span>$120.000</span>
+
+                <p>
+                    Acabado profesional y elegante
+                </p>
+
+                <button class="add-cart"
+                    data-name="Manicura Acrílico"
+                    data-price="120000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- RUBBER -->
+
+        <div class="card fade-up">
+
+            <img src="img/Ruber-base.jpg"
+                alt="Rubber Base">
+
+            <div class="card-content">
+
+                <h3>Recubrimiento Rubber Base</h3>
+
+                <span>$90.000</span>
+
+                <p>
+                    Acabado profesional y elegante
+                </p>
+
+                <button class="add-cart"
+                    data-name="Recubrimiento Rubber Base"
+                    data-price="90000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- HOMBRE -->
+
+        <div class="card fade-up">
+
+            <img src="img/Manicure-hombre.jpg"
+                alt="Hombre">
+
+            <div class="card-content">
+
+                <h3>Manicura y Pedicura Hombre</h3>
+
+                <span>$50.000</span>
+
+                <p>
+                    Acabado profesional y elegante
+                </p>
+
+                <button class="add-cart"
+                    data-name="Manicura y Pedicura Hombre"
+                    data-price="50000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- PESTAÑAS -->
+
+    <div class="category-title">
+
+        <h2>Extensiones de Pestañas</h2>
+
+    </div>
+
+    <div class="services-container">
+
+        <!-- CLASICO -->
+
+        <div class="card fade-up">
+
+            <img src="img/Efecto-clasico.jpg">
+
+            <div class="card-content">
+
+                <h3>Efecto Clásico</h3>
+
+                <span>$120.000</span>
+
+                <p>
+                    Retoque cada 15 días por $55.000
+                </p>
+
+                <button class="add-cart"
+                    data-name="Efecto Clásico"
+                    data-price="120000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- RUSO -->
+
+        <div class="card fade-up">
+
+            <img src="img/volumen-ruso.jpg">
+
+            <div class="card-content">
+
+                <h3>Volumen Ruso</h3>
+
+                <span>$160.000</span>
+
+                <p>
+                    Retoque cada 23 días por $70.000
+                </p>
+
+                <button class="add-cart"
+                    data-name="Volumen Ruso"
+                    data-price="160000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- 2D -->
+
+        <div class="card fade-up">
+
+            <img src="img/2d.jpg">
+
+            <div class="card-content">
+
+                <h3>Efecto 2D</h3>
+
+                <span>$135.000</span>
+
+                <p>
+                    Retoque cada 15 días por $60.000
+                </p>
+
+                <button class="add-cart"
+                    data-name="Efecto 2D"
+                    data-price="135000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- TECNOLOGICAS -->
+
+        <div class="card fade-up">
+
+            <img src="img/Tecnologico.jpg">
+
+            <div class="card-content">
+
+                <h3>Efecto Tecnológicas</h3>
+
+                <span>$150.000</span>
+
+                <p>
+                    Retoque cada 20 a 23 días por $70.000
+                </p>
+
+                <button class="add-cart"
+                    data-name="Efecto Tecnológicas"
+                    data-price="150000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- OJO GATO -->
+
+        <div class="card fade-up">
+
+            <img src="img/ojo-gato.jpg">
+
+            <div class="card-content">
+
+                <h3>Efecto Ojo de Gato</h3>
+
+                <span>$150.000</span>
+
+                <p>
+                    Retoque cada 15 días por $65.000
+                </p>
+
+                <button class="add-cart"
+                    data-name="Efecto Ojo de Gato"
+                    data-price="150000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- MASAJES -->
+
+    <div class="category-title">
+
+        <h2>Masajes</h2>
+
+    </div>
+
+    <div class="services-container">
+
+        <!-- RELAJANTE -->
+
+        <div class="card fade-up">
+
+            <img src="img/Masaje1.jpg">
+
+            <div class="card-content">
+
+                <h3>Masaje Relajante</h3>
+
+                <p>- Masaje terapéutico manual</p>
+                <p>- Vibro masajeador</p>
+                <p>- Calor localizado</p>
+                <p>- Estiramientos</p>
+
+                <span>$120.000</span>
+
+                <button class="add-cart"
+                    data-name="Masaje Relajante"
+                    data-price="120000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- MOLDEO -->
+
+        <div class="card fade-up">
+
+            <img src="img/masaje-moldeador.jpg">
+
+            <div class="card-content">
+
+                <h3>Sesión Moldeo</h3>
+
+                <p>- Drenaje linfático</p>
+                <p>- Maderoterapia</p>
+                <p>- Calor localizado</p>
+
+                <span>$50.000</span>
+
+                <button class="add-cart"
+                    data-name="Sesión Moldeo"
+                    data-price="50000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- PELUQUERIA -->
+
+    <div class="category-title">
+
+        <h2>Peluquería</h2>
+
+    </div>
+
+    <div class="services-container">
+
+        <!-- CORTE DAMA -->
+
+        <div class="card fade-up">
+
+            <img src="img/Corte dama.jpg">
+
+            <div class="card-content">
+
+                <h3>Corte Dama</h3>
+
+                <span>$20.000</span>
+
+                <button class="add-cart"
+                    data-name="Corte Dama"
+                    data-price="20000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- TRENZAS -->
+
+        <div class="card fade-up">
+
+            <img src="img/Trenzas.jpg">
+
+            <div class="card-content">
+
+                <h3>Trenzas y Peinados</h3>
+
+                <span>Desde $15.000</span>
+
+                <button class="add-cart"
+                    data-name="Trenzas y Peinados"
+                    data-price="15000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- REPOLARIZACION -->
+
+        <div class="card fade-up">
+
+            <img src="img/Repolarizacion.jpg">
+
+            <div class="card-content">
+
+                <h3>Repolarización</h3>
+
+                <span>Desde $70.000</span>
+
+                <button class="add-cart"
+                    data-name="Repolarización"
+                    data-price="70000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- ONDAS -->
+
+        <div class="card fade-up">
+
+            <img src="img/Ondas.jpg">
+
+            <div class="card-content">
+
+                <h3>Ondas a Calor</h3>
+
+                <span>Desde $40.000</span>
+
+                <button class="add-cart"
+                    data-name="Ondas a Calor"
+                    data-price="40000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- CORTE HOMBRE -->
+
+        <div class="card fade-up">
+
+            <img src="img/Corte hombre.jpg">
+
+            <div class="card-content">
+
+                <h3>Corte Hombre</h3>
+
+                <span>$20.000</span>
+
+                <button class="add-cart"
+                    data-name="Corte Hombre"
+                    data-price="20000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- CEPILLADO -->
+
+        <div class="card fade-up">
+
+            <img src="img/Planchado.jpg">
+
+            <div class="card-content">
+
+                <h3>Cepillado y Planchado</h3>
+
+                <span>$35.000</span>
+
+                <button class="add-cart"
+                    data-name="Cepillado y Planchado"
+                    data-price="35000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- KERATINA -->
+
+        <div class="card fade-up">
+
+            <img src="img/Keratina.jpg">
+
+            <div class="card-content">
+
+                <h3>Keratina</h3>
+
+                <span>Desde $250.000</span>
+
+                <button class="add-cart"
+                    data-name="Keratina"
+                    data-price="250000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- GALERIA -->
+
+    <section class="gallery" id="galeria">
+
+        <div class="section-title fade-up">
+
+            <span>GALERÍA</span>
+
+            <h2>Conoce Nuestro Espacio</h2>
+
+        </div>
+
+        <div class="gallery-container">
+
+            <img src="img/salon5.png">
+            <img src="img/Habitacion.jpg">
+            <img src="img/Manicure.jpg">
+            <img src="img/Masaje1.jpg">
+
+        </div>
+
+    </section>
+
+    <!-- CONTACTO -->
+
+    <section class="contact" id="contacto">
+
+        <h2>Reserva tu cita</h2>
+
+        <p>
+            Agenda fácilmente por WhatsApp
+            y recibe atención personalizada.
+        </p>
+
+        <a href="https://wa.me/573202114207"
+            target="_blank"
+            class="btn">
+
+            <i class="fa-brands fa-whatsapp"></i>
+            Reservar Ahora
+
+        </a>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Morena Spa
+            - Todos los derechos reservados
+        </p>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
