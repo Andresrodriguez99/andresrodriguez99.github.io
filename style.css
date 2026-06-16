@@ -934,3 +934,77 @@ footer{
     }
 
 }
+
+/* ===================================== */
+/* FORMULARIO CLIENTES */
+/* ===================================== */
+
+.contact-form{
+    max-width:900px;
+    margin:50px auto 0;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.contact-form input,
+.contact-form select{
+    width:100%;
+    padding:18px;
+    border:none;
+    border-radius:15px;
+    background:white;
+    font-size:16px;
+    outline:none;
+}
+
+.contact-form input:focus,
+.contact-form select:focus{
+    box-shadow:0 0 0 3px rgba(212,175,55,0.3);
+}
+
+.contact-form button{
+    grid-column:1 / -1;
+    padding:18px;
+    border:none;
+    border-radius:50px;
+    background:linear-gradient(
+        135deg,
+        var(--gold),
+        var(--gold-dark)
+    );
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.contact-form button:hover{
+    transform:translateY(-4px);
+}
+
+.checkbox{
+    grid-column:1 / -1;
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    text-align:left;
+    font-size:14px;
+    color:white;
+}
+
+.checkbox input{
+    width:auto;
+    margin-top:4px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .contact-form{
+        grid-template-columns:1fr;
+    }
+
+}
