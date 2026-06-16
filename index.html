@@ -79,6 +79,14 @@
             placeholder="Tu nombre">
 
         <input
+            type="date"
+            id="reservation-date">
+
+        <input
+            type="time"
+            id="reservation-time">
+
+        <input
             type="text"
             id="client-phone"
             placeholder="Tu teléfono">
@@ -1011,7 +1019,7 @@
 
             <img src="img/salon5.png">
             <img src="img/Habitacion.jpg">
-            <img src="img/Manicure.jpg">
+            <img src="img/Fachada.jpg">
             <img src="img/Masaje1.jpg">
 
         </div>
@@ -1022,21 +1030,78 @@
 
     <section class="contact" id="contacto">
 
-        <h2>Reserva tu cita</h2>
+    <div class="section-title">
+
+        <span>CONTÁCTANOS</span>
+
+        <h2>Mantente conectada con Morena Spa</h2>
 
         <p>
-            Agenda fácilmente por WhatsApp
-            y recibe atención personalizada.
+            Déjanos tus datos para recibir promociones,
+            novedades y descuentos exclusivos.
         </p>
 
-        <a href="https://wa.me/573202114207"
-            target="_blank"
-            class="btn">
+    </div>
 
-            <i class="fa-brands fa-whatsapp"></i>
-            Reservar Ahora
+    <form id="client-form" class="contact-form">
+        
 
-        </a>
+    <input
+        type="text"
+        id="firstName"
+        placeholder="Nombre"
+        required>
+
+    <input
+        type="text"
+        id="lastName"
+        placeholder="Apellido"
+        required>
+
+    <input
+        type="email"
+        id="email"
+        placeholder="Correo electrónico"
+        required>
+
+    <input
+        type="tel"
+        id="phone"
+        placeholder="Celular"
+        required>
+
+
+    <select id="interest">
+
+        <option value="">
+            Servicio de interés
+        </option>
+
+        <option>Uñas</option>
+        <option>Pestañas</option>
+        <option>Peluquería</option>
+        <option>Masajes</option>
+        <option>Todos</option>
+
+    </select>
+
+    <label class="checkbox">
+
+        <input
+            type="checkbox"
+            required>
+
+        Acepto recibir promociones, novedades y comunicaciones de Morena Spa.
+
+    </label>
+
+    <button type="submit">
+
+        Registrarme
+
+    </button>
+
+    </form>
 
     </section>
 
