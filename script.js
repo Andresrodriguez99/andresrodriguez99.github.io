@@ -445,8 +445,15 @@ sendWhatsapp.addEventListener("click", () => {
 
     }
 
+    
     const clientName =
     document.getElementById("client-name").value;
+
+    const reservationDate =
+    document.getElementById("reservation-date").value;
+
+    const reservationTime =
+    document.getElementById("reservation-time").value;
 
     const clientPhone =
     document.getElementById("client-phone").value;
@@ -460,6 +467,21 @@ sendWhatsapp.addEventListener("click", () => {
         `👤 Nombre: ${clientName}%0A`;
 
     }
+
+    if(reservationDate){
+
+        message +=
+        `📅 Fecha: ${reservationDate}%0A`;
+
+    }
+
+    if(reservationTime){
+
+        message +=
+        `⏰ Hora: ${reservationTime}%0A`;
+
+    }
+
 
     if(clientPhone){
 
